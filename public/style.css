@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main-area{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar navbar " 
+        "slot-1-txt slot-2-txt slot-3-txt slot-4-txt slot-5-txt space"
+        "slot-1 slot-2 slot-3 slot-4 slot-5 space"
+        "road-area road-area road-area road-area road-area road-area";
+        
+    grid-template-columns: repeat(5, 1fr) .5fr; 
+    grid-template-rows: 6% 4% 45% 45%; ;
+}
+
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #FFF6E0;
+}
+
+.nav-logo {
+    display: flex;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link li {
+    color: #FFF6E0;
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFF6E0;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-link a:hover {
+    color: #ff9800;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+.road-area {
+    grid-area: road-area;
+    background-color: #1D1C1C;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    border-right: rgb(177, 60, 13) solid 12px;
+}
+
+.white-bar-vertical{
+    background-color: white;
+    width: 10px;
+    height: 100px;
+
+}
+
+.white-bar-horizontal{
+    background-color: white;
+    width: 100px;
+    height: 10px;
+}
+
+.slot-1 { grid-area: slot-1;}
+.slot-2 { grid-area: slot-2;}
+.slot-3 { grid-area: slot-3;}
+.slot-4 { grid-area: slot-4;}
+.slot-5 { grid-area: slot-5;}
+
+.slot-1-txt { grid-area: slot-1-txt;}
+.slot-2-txt { grid-area: slot-2-txt;}
+.slot-3-txt { grid-area: slot-3-txt;}
+.slot-4-txt { grid-area: slot-4-txt;}
+.slot-5-txt { grid-area: slot-5-txt;}
+
+.slot-txt{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 1px;
+}
+
+.slot {
+    background-color: #1D1C1C;
+    border-left: rgb(255, 207, 16) solid 20px;
+    border-right: rgb(255, 207, 16) solid 20px;
+    margin: 0 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    position: relative; 
+    
+    
+}
+
+.space{
+    grid-area: space;
+    background-color: black;
+    margin-left: 2px;
+    display: flex;
+    align-items:end;
+    justify-content:end;
+}
+
+
+.car-img {
+    position: absolute;  
+    width: 85%;
+    z-index: 2;
+    transition: transform 0.3s ease-out; 
+}
+
+.footer {
+    color: #FFF6E0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #FFF6E0; /* White text */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-section {
+    color: #FFF6E0;
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-section h3 {
+    color: #FFF6E0;
+    border-bottom: 2px solid #FFF6E0; /* Underline for headings */
+    padding-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    color: #FFF6E0;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    color: #FFF6E0;
+    margin: 10px 0;
+  }
+  
+  .footer-section a {
+    color: #FFF6E0; /* White links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .footer-section a:hover {
+    color: #ffcc00; /* Change color on hover */
+  }
+  
+  .logo {
+    color: #FFF6E0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+    color: #FFF6E0;
+    font-size: 0.9em; /* Smaller copyright text */
+  }

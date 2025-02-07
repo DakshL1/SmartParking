@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Smart Parking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #272829; 
+            color: #FFF6E0; 
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .navbar {
+            background-color: #272829; 
+        }
+        
+        .navbar a {
+            color: #FFF6E0; 
+        }
+        
+        .hero {
+            background-image: url('/images/your-hero-image.jpg'); 
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFF6E0; 
+            position: relative;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        
+        .services-section {
+            padding: 50px 0;
+        }
+        
+        .service-card {
+            background-color: #272829; 
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .service-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #FFF6E0;
+        }
+        
+        .service-description {
+            padding: 0 20px 20px;
+            color: #D8D9DA; 
+        }
+        
+        footer {
+            background-color: #272829; 
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #FFF6E0; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Smart Parking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book-slot.html">Book</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Our Services</h1>
+    </div>
+
+    <div class="container services-section">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="../images/real-time-monitoring.jpg" alt="Real-Time Monitoring" class="service-image">
+                    <div class="service-title">Real-Time Monitoring</div>
+                    <div class="service-description">
+                        <p>Get real-time updates on parking availability and space management to be informed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="../images/smart-payment.jpg" alt="Smart Payment Solutions" class="service-image">
+                    <div class="service-title">Smart Payment Solutions</div>
+                    <div class="service-description">
+                        <p>Seamless payment options for a hassle-free parking experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="../images/service3.jpg" alt="Parking Space Reservation" class="service-image">
+                    <div class="service-title">Parking Space Reservation</div>
+                    <div class="service-description">
+                        <p>Reserve your parking space in advance to ensure availability and save time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Parking. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-jHAD3yZ6gIQY6HtqVzi2yPMej5tc2Lmr8hFiXjrQK2js3IOL0zxd3tj85MSUwI06" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-9ndCyUa0IHLIwAL9p51EYkkpH1z0um4LeTT1r6eVLMYpqlGnQUO8y5zwZZkKk+U4" crossorigin="anonymous"></script>
+</body>
+</html>

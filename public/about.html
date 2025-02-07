@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF6E0; 
+    overflow-x: hidden;
+    background-color: #272829; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #272829; 
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF6E0; 
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: darkgray; 
+}
+
+.nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFF6E0; 
+}
+
+
+.parallax {
+    background: url('smart-parking-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.parallax h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #FFF6E0; 
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    animation: textSlide 2.5s ease forwards;
+}
+
+.parallax p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #FFF6E0;
+    font-weight: 300;
+    animation: textFadeIn 2.5s ease 1s forwards;
+    opacity: 0;
+}
+
+@keyframes textSlide {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.section {
+    padding: 70px 20px;
+    background-color: #272829; 
+    color: #FFF6E0; 
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #FFF6E0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.section p:hover {
+    color: darkgray; 
+    transition: color 0.4s ease;
+}
+
+
+.mission, .vision {
+    background-color: #272829; 
+    padding: 70px 20px;
+    color: #FFF6E0; 
+    text-align: center;
+}
+
+.mission h2, .vision h2 {
+    color: #FFF6E0; 
+    animation: fadeReveal 2s ease;
+}
+
+@keyframes fadeReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer {
+    background: #272829; 
+    color: #FFF6E0; 
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+
+.parallax::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 80%);
+    animation: ripple 5s infinite linear;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-brand">Smart Parking</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#overview">Overview</a>
+            <a href="#mission">Mission</a>
+            <a href="#vision">Vision</a>
+            
+        </div>
+    </nav>
+
+    <!-- Parallax Section -->
+    <div class="parallax">
+        <div>
+            <h1>Smart Parking</h1>
+            <p>Redefining the way we park, by Mayank, Vinayak And Kunal</p>
+        </div>
+    </div>
+
+    <!-- Company Overview Section -->
+    <div id="overview" class="section">
+        <h2>Company Overview</h2>
+        <p>Smart Parking revolutionizes the way we park by providing cutting-edge, automated solutions.</p>
+        <p>Our primary goal is to alleviate parking challenges in urban areas, offering innovative services tailored to both businesses and individuals.</p>
+    </div>
+
+    <!-- Mission Section -->
+    <div id="mission" class="mission">
+        <h2>Mission Statement</h2>
+        <p>To lead the transformation of urban parking by offering smart, sustainable, and efficient parking solutions.</p>
+    </div>
+
+    <!-- Vision Section -->
+    <div id="vision" class="vision">
+        <h2>Vision Statement</h2>
+        <p>To be the global leader in smart parking technology, creating a sustainable future where parking is effortless.</p>
+    </div>
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Smart Parking, Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
